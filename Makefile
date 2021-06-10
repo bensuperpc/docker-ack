@@ -21,7 +21,7 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 BASE_IMAGE := alpine:latest
-IMAGE_NAME := bensuperpc/<<IMAGE_NAME>>
+IMAGE_NAME := bensuperpc/ack
 DOCKERFILE := Dockerfile
 
 DOCKER := docker
@@ -31,7 +31,8 @@ DATE_FULL := $(shell date -u "+%Y-%m-%dT%H:%M:%SZ")
 UUID := $(shell cat /proc/sys/kernel/random/uuid)
 VERSION := 1.0.0
 
-ARCH_LIST := linux/amd64 linux/386 linux/arm64 linux/ppc64le linux/s390x linux/arm/v7 linux/arm/v6
+#linux/ppc64le linux/s390x linux/arm/v7 linux/arm/v6 linux/arm64
+ARCH_LIST := linux/amd64 linux/386
 comma:= ,
 COM_ARCH_LIST:= $(subst $() $(),$(comma),$(ARCH_LIST))
 

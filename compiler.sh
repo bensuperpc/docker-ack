@@ -20,8 +20,8 @@
 #//////////////////////////////////////////////////////////////
 
 TAG_VERSION=latest
-DOCKER_IMAGE=bensuperpc/<<IMAGE_NAME>>
-COMPILER_EXEC=<<IMAGE_NAME>>
+DOCKER_IMAGE=bensuperpc/ack
+COMPILER_EXEC=ack
 
 case "$1" in
     -version|-v)
